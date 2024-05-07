@@ -8,12 +8,15 @@ import Page1 from "./Pages/Page1";
 import PageHolder from "./Ui/PageHolder";
 import Page2 from "./Pages/Page2";
 import Page3 from "./Pages/Page3";
+import Page4 from "./Pages/Page4";
+import Page5 from "./Pages/Page5";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="bg-bk_black h-content w-full text-text_color ">
+      
       <NavBar />
       <PageHolder>
         <Page1>
@@ -21,6 +24,8 @@ function App() {
         </Page1>
         <Page2 />
         <Page3/>
+        <Page4/>
+        <Page5 />
       </PageHolder>
     </div>
   );

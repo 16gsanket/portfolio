@@ -24,7 +24,7 @@ export default function () {
           proident, sunt in culpa qui officia
         </p>
       </div>
-      <div className="h-[40vh] w-11/12 bg-green-400/5 flex align-middle justify-around gap-1 items-center">
+      <div className="h-[40vh] w-11/12 flex align-middle justify-around gap-1 items-center">
         
         {services.map(service=>{
           return <div className="w-4/12 h-3/4 bg-bk_black flex flex-col align-middle justify-center text-center rounded-xl">

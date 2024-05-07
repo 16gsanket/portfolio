@@ -14,19 +14,20 @@ function Page3() {
           proident, sunt in culpa qui officia
         </p>
       </div>
-      <div className="h-4/6 w-10/12 bg-red-500 flex flex-col gap-1">
-        <div className="h-1/6 w-full bg-red-400 text-senter">
-            <ul className="">
-                <li>ALL</li>
-                <li>FRONT END DEVELOPMENT</li>
-                <li>BACK END DEVELOPMENT</li>
-                <li>UI/UX</li>
-            </ul>
-
+      <div className="h-4/6 w-10/12  flex flex-col gap-1">
+        <div className="h-1/6 w-full text-senter p-2">
+          <ul className=" flex align-middle justify-center items-center">
+            <button className="sections font-bold">ALL</button>
+            <button className="sections font-bold">
+              FRONTEND <br /> DEVELOPMENT
+            </button>
+            <button className="sections font-bold">
+              BACKEND <br /> DEVELOPMENT
+            </button>
+            <button className="sections font-bold">UI/UX</button>
+          </ul>
         </div>
-        <div className="h-5/6 w-full bg-green-400"
-        ></div>
-
+        <div className="h-5/6 w-full bg-green-400"></div>
       </div>
     </div>
   );

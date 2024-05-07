@@ -1,0 +1,33 @@
+.sections{
+    padding: 10px 20px;
+    color:#95958C;
+}
+.sections:hover{
+    color: orange;
+    scale:1.1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+
+}
+.sections:active{
+    color: orange;
+    scale:1.1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    border-bottom: 1px solid red;
+}
+.contact{
+    background-color: #34343B;
+    display: inline-block;
+    padding:15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 5px;
+}
+.end{
+    border-top: 1px solid orange;
+    background-color:transparent;
+    display: inline;
+    padding:20px 10px;
+}
