@@ -5,7 +5,7 @@ export default function NavBar() {
     <div className=' h-[15dvh]  flex align-middle justify-between md:px-10 sm:px-8 px-5 items-center '>
        
             <ul>
-                SG
+                Sanket Gaikwad
             </ul>
 
             <ul className='flex align-middle justify-between gap-4'>
