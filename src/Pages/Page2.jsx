@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 
 
 const services = [
-  { title: "Front End Development" ,icon:<FaReact /> ,projects: 6, experience: 2 },
+  { title: "Front End Development" ,icon:<FaReact /> ,projects: 6, experience: 2 ,  },
   { title: "Back End Development",icon:<CiServer />, projects: 2, experience: 1 },
   { title: "UI/UX Design",icon:<CiPen />, projects: 2, experience: 0.4 },
 
@@ -27,7 +27,7 @@ export default function () {
       <div className="h-[40vh] w-11/12 flex align-middle justify-around gap-1 items-center">
         
         {services.map(service=>{
-          return <div className="w-4/12 h-3/4 bg-bk_black flex flex-col align-middle justify-center text-center rounded-xl">
+          return <div className="w-4/12 h-3/4 bg-bk_black flex flex-col align-middle justify-center text-center rounded-xl" key={service.title}>
             <p className="text-2xl flex align-middle justify-center">
               {service.icon}
             </p>

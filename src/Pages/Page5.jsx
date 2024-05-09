@@ -16,7 +16,7 @@ function Page5() {
           proident, sunt in culpa qui officia
         </p>
       </div>
-      <div className="h-3/6 w-full text-xl text-orange_text flex flex-col align-middle justify-center items-center gap-10">
+      <div className="h-3/6 w-full text-xl text-orange_text flex flex-col align-middle justify-center items-center gap-10 mt-10">
         <div className="flex align-middle justify-center gap-20">
           <div className="contact">
             <CiMail className="text-white" />

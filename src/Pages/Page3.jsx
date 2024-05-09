@@ -5,6 +5,7 @@ xi -> ui/ux
 */
 
 import { useState } from "react";
+import DisplayProject from "../Ui/DisplayProject";
 
 const PROJECTS = [
   {
@@ -15,6 +16,8 @@ const PROJECTS = [
     deployment_link: "https://the-wild-oasis-ashen-alpha.vercel.app/",
     github_link: "https://github.com/16gsanket/the-wild-oasis",
     type: "full",
+    image:"",
+    id:0
   },
   {
     tittle: "Property Broker",
@@ -31,6 +34,8 @@ const PROJECTS = [
     deployment_link: "https://property-broker-one.vercel.app/",
     github_link: "https://github.com/16gsanket/PropertyBroker",
     type: "full",
+    image:"/property.png",
+    id:1
   },
   {
     tittle: "Fast React Pizza Co",
@@ -40,6 +45,8 @@ const PROJECTS = [
     deployment_link: "https://fast-react-pizza-gules.vercel.app/",
     github_link: "https://github.com/16gsanket/fast-react-pizza",
     type: "front",
+    image:'/fastfood.png',
+    id:2
   },
   {
     tittle: "World Wise App",
@@ -49,6 +56,8 @@ const PROJECTS = [
     deployment_link: "https://world-wide-delta.vercel.app/",
     github_link: "https://github.com/16gsanket/WorldWide",
     type: "front",
+    image:'/worldwide.png',
+    id:3
   },
   // https://snlet.github.io/SpainCollectionClone/
   {
@@ -58,6 +67,8 @@ const PROJECTS = [
     deployment_link: "https://snlet.github.io/SpainCollectionClone/",
     github_link: "https://github.com/Snlet/SpainCollectionClone/",
     type: "xi",
+    image:'/spaincollection.png',
+    id:4
   },
   {
     tittle: "Wednesday",
@@ -66,6 +77,8 @@ const PROJECTS = [
     deployment_link: "https://snlet.github.io/Wednesday/",
     github_link: "https://github.com/Snlet/Wednesday/",
     type: "xi",
+    image:'/wednesday.png',
+    id:5
   },
 ];
 
@@ -89,7 +102,7 @@ function Page3() {
   console.log(filtered_list);
 
   return (
-    <div className="h-[120dvh] w-full bg-bk_black flex flex-col gap-2 align-middle justify-around items-center ">
+    <div className="h-fit w-full bg-bk_black flex flex-col gap-2 align-middle justify-around items-center py-10">
       <div className="w-8/12 h-fit py -5  text-center flex flex-col gap-4">
         <h2 className="text-md text-orange_text font-semibold tracking-wider ">
           PORTFOLIO
@@ -132,7 +145,11 @@ function Page3() {
             </button>
           </ul>
         </div>
-        <div className="h-5/6 w-full bg-green-400"></div>
+        <div className="h-fit w-full flex align-middle justify-center gap-3 items-center flex-wrap">
+          
+          {filtered_list.map(project=><DisplayProject project={project} key={project.id}/>)}
+
+        </div>
       </div>
     </div>
   );

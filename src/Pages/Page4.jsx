@@ -37,7 +37,7 @@ function Page4() {
       <div className=""></div>
       <div className="h-fit w-full md:flex">
         {ONGOING_PRESENT_PROJECT.map((project) => (
-          <div class="bg-bk_black shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)]  p-4 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+          <div class="bg-bk_black shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)]  p-4 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4" key={project.title}>
             <img
               src="https://readymadeui.com/cardImg.webp"
               class="w-full rounded-lg"
