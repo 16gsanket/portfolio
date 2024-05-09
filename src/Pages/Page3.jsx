@@ -12,11 +12,11 @@ const PROJECTS = [
     tittle: "The Wild Oasis",
     description:
       "This project simplifies internal hotel operations by providing a user-friendly platform for staff members. With this system, staff can efficiently manage guest check-in/out, breakfast options, room bookings, and other hotel-related tasks. By centralizing these functions, the project enhances staff productivity and ensures a seamless experience for both employees and guests",
-    tech_stack: ["react , react-router , context-API , supabase, react-charts"],
+    tech_stack: ["react" , "react-router" , "context-API" , "supabase", "react-charts"],
     deployment_link: "https://the-wild-oasis-ashen-alpha.vercel.app/",
     github_link: "https://github.com/16gsanket/the-wild-oasis",
     type: "full",
-    image:"",
+    image:"/wild.png",
     id:0
   },
   {
@@ -118,28 +118,32 @@ function Page3() {
       </div>
       <div className="h-4/6 w-10/12  flex flex-col gap-10">
         <div className="h-1/6 w-full text-senter p-2">
-          <ul className=" flex align-middle justify-center items-center">
+          <ul className="flex align-middle justify-center items-center">
             <button
-              className="sections font-bold"
+              className="sections font-bold "
               onClick={() => setTypeHolder("all")}
+              style={typeHolder === 'all' ? { color:'#e4aa48',scale:'1.1'}:null}
             >
               ALL
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("front")}
+              style={typeHolder === 'front' ? { color:'#e4aa48',scale:'1.1'}:null}
             >
               FRONTEND <br /> DEVELOPMENT
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("full")}
+              style={typeHolder === 'full' ? { color:'#e4aa48',scale:'1.1',transition:'all ease 0.3'}:null}
             >
               BACKEND <br /> DEVELOPMENT
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("xi")}
+              style={typeHolder === 'xi' ? { color:'#e4aa48',scale:'1.1',transition:'all ease 0.3'}:null}
             >
               UI/UX
             </button>

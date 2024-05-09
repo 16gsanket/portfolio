@@ -7,6 +7,7 @@ const ONGOING_PRESENT_PROJECT = [
     stack: "React, React Router@4 ",
     link: "",
     github: "https://github.com/16gsanket/the-wild-oasis",
+    image:"/wild.png"
   },
   {
     date: "21 April 2024",
@@ -15,6 +16,7 @@ const ONGOING_PRESENT_PROJECT = [
     stack: "React, React Router@4 ",
     link: "https://property-broker-one.vercel.app/",
     github: "https://github.com/16gsanket/PropertyBroker",
+    image:'/property.png'
   },
 ];
 
@@ -39,7 +41,8 @@ function Page4() {
         {ONGOING_PRESENT_PROJECT.map((project) => (
           <div class="bg-bk_black shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)]  p-4 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4" key={project.title}>
             <img
-              src="https://readymadeui.com/cardImg.webp"
+              src={project.image}
+              alt="image "
               class="w-full rounded-lg"
             />
             <div class="px-4 my-6 text-center">

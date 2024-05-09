@@ -25,7 +25,7 @@ function Page5() {
           <div className="contact">📞 +91 9769580066</div>
         </div>
 
-        <div className="contact">@snlet</div>
+        <div className="contact">@sanket</div>
 
         <div className="flex align-middle justify-center gap-20">
           <div className="contact">
@@ -43,12 +43,12 @@ function Page5() {
             </svg>
             @snlet
           </div>
-          <div className="contact">+91 9769580066</div>
+          <div className="contact">+91 7208341406</div>
         </div>
       </div>
       <div className="end" >
         <h2 className="text-center">
-          &copy;Copyright - Snlet & Sanket | All Rights Reserved
+          &copy;Copyright -  Sanket & Snlet | All Rights Reserved
         </h2>
       </div>
     </div>

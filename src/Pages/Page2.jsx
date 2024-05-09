@@ -27,7 +27,7 @@ export default function () {
       <div className="h-[40vh] w-11/12 flex align-middle justify-around gap-1 items-center">
         
         {services.map(service=>{
-          return <div className="w-4/12 h-3/4 bg-bk_black flex flex-col align-middle justify-center text-center rounded-xl" key={service.title}>
+          return <div className="w-4/12 h-3/4 bg-bk_black flex flex-col align-middle justify-center text-center rounded-xl hover:text-orange_text" key={service.title}>
             <p className="text-2xl flex align-middle justify-center">
               {service.icon}
             </p>

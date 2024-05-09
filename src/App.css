@@ -31,3 +31,6 @@
     display: inline;
     padding:20px 10px;
 }
+::selection {
+    background-color: '#e4aa48';
+}
