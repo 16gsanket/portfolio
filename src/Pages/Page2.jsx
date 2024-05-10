@@ -19,9 +19,7 @@ export default function () {
         <h2 className="text-md text-orange_text font-semibold tracking-wider ">SERVICES</h2>
         <p className="text-2xl text-text_color font-bold tracking-wide ">What I am Great At</p>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non
-          proident, sunt in culpa qui officia
+          I design  modern Website with modern UI designs for seamless UX , Developing Front End Application using dvance Library like <span className="text-blue-400">React.js</span> and Robust , Scalable Frameworks like Express.js , <span className="text-red-600">Node.js</span> , <span className="text-yellow-600">MongoDB</span> and <span className="text-green-700">Supabase</span> for BackEnd
         </p>
       </div>
       <div className="h-[40vh] w-11/12 flex align-middle justify-around gap-1 items-center">

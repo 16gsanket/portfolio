@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export default function Page1({children}) {
+export default function Page1({ children }) {
   return (
-    <div className='h-[70dvh] w-full bg-transparent relative'>
-
-            {children}
-
-    </div>
-  )
+    <div className="h-[70dvh] w-full bg-transparent relative">{children}</div>
+  );
 }

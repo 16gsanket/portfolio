@@ -111,9 +111,7 @@ function Page3() {
           My Masterpiece Collection
         </p>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non
-          proident, sunt in culpa qui officia
+        Well cureted project display a perfect blend of creativity and dedication for bringing ideas into life and reach people for providing fantabulous User Experience along with great functionality
         </p>
       </div>
       <div className="h-4/6 w-10/12  flex flex-col gap-10">
