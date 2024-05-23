@@ -17,7 +17,11 @@ export default {
         'text_color' : "#ebebec",
         "orange_text" : "#e4aa48",
         "orange_hover":"#c18b2f",
+<<<<<<< HEAD
         "page2_color":"#34343B"
+=======
+        "bk_2_black" : "#35353b"
+>>>>>>> d401fd91ea3036f963fc7c812869a1e3f2830ac7
         
       }
     },
