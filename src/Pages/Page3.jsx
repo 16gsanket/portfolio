@@ -12,12 +12,18 @@ const PROJECTS = [
     tittle: "The Wild Oasis",
     description:
       "This project simplifies internal hotel operations by providing a user-friendly platform for staff members. With this system, staff can efficiently manage guest check-in/out, breakfast options, room bookings, and other hotel-related tasks. By centralizing these functions, the project enhances staff productivity and ensures a seamless experience for both employees and guests",
-    tech_stack: ["react" , "react-router" , "context-API" , "supabase", "react-charts"],
+    tech_stack: [
+      "react",
+      "react-router",
+      "context-API",
+      "supabase",
+      "react-charts",
+    ],
     deployment_link: "https://the-wild-oasis-ashen-alpha.vercel.app/",
     github_link: "https://github.com/16gsanket/the-wild-oasis",
     type: "full",
-    image:"/wild.png",
-    id:0
+    image: "/wild.png",
+    id: 0,
   },
   {
     tittle: "Property Broker",
@@ -34,8 +40,8 @@ const PROJECTS = [
     deployment_link: "https://property-broker-one.vercel.app/",
     github_link: "https://github.com/16gsanket/PropertyBroker",
     type: "full",
-    image:"/property.png",
-    id:1
+    image: "/property.png",
+    id: 1,
   },
   {
     tittle: "Fast React Pizza Co",
@@ -45,8 +51,8 @@ const PROJECTS = [
     deployment_link: "https://fast-react-pizza-gules.vercel.app/",
     github_link: "https://github.com/16gsanket/fast-react-pizza",
     type: "front",
-    image:'/fastfood.png',
-    id:2
+    image: "/fastfood.png",
+    id: 2,
   },
   {
     tittle: "World Wise App",
@@ -56,8 +62,8 @@ const PROJECTS = [
     deployment_link: "https://world-wide-delta.vercel.app/",
     github_link: "https://github.com/16gsanket/WorldWide",
     type: "front",
-    image:'/worldwide.png',
-    id:3
+    image: "/worldwide.png",
+    id: 3,
   },
   // https://snlet.github.io/SpainCollectionClone/
   {
@@ -67,8 +73,8 @@ const PROJECTS = [
     deployment_link: "https://snlet.github.io/SpainCollectionClone/",
     github_link: "https://github.com/Snlet/SpainCollectionClone/",
     type: "xi",
-    image:'/spaincollection.png',
-    id:4
+    image: "/spaincollection.png",
+    id: 4,
   },
   {
     tittle: "Wednesday",
@@ -77,8 +83,8 @@ const PROJECTS = [
     deployment_link: "https://snlet.github.io/Wednesday/",
     github_link: "https://github.com/Snlet/Wednesday/",
     type: "xi",
-    image:'/wednesday.png',
-    id:5
+    image: "/wednesday.png",
+    id: 5,
   },
 ];
 
@@ -111,7 +117,9 @@ function Page3() {
           My Masterpiece Collection
         </p>
         <p>
-        Well cureted project display a perfect blend of creativity and dedication for bringing ideas into life and reach people for providing fantabulous User Experience along with great functionality
+          Well cureted project display a perfect blend of creativity and
+          dedication for bringing ideas into life and reach people for providing
+          fantabulous User Experience along with great functionality
         </p>
       </div>
       <div className="h-4/6 w-10/12  flex flex-col gap-10">
@@ -120,37 +128,59 @@ function Page3() {
             <button
               className="sections font-bold "
               onClick={() => setTypeHolder("all")}
-              style={typeHolder === 'all' ? { color:'#e4aa48',scale:'1.1'}:null}
+              style={
+                typeHolder === "all" ? { color: "#e4aa48", scale: "1.1" } : null
+              }
             >
               ALL
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("front")}
-              style={typeHolder === 'front' ? { color:'#e4aa48',scale:'1.1'}:null}
+              style={
+                typeHolder === "front"
+                  ? { color: "#e4aa48", scale: "1.1" }
+                  : null
+              }
             >
               FRONTEND <br /> DEVELOPMENT
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("full")}
-              style={typeHolder === 'full' ? { color:'#e4aa48',scale:'1.1',transition:'all ease 0.3'}:null}
+              style={
+                typeHolder === "full"
+                  ? {
+                      color: "#e4aa48",
+                      scale: "1.1",
+                      transition: "all ease 0.3",
+                    }
+                  : null
+              }
             >
               BACKEND <br /> DEVELOPMENT
             </button>
             <button
               className="sections font-bold"
               onClick={() => setTypeHolder("xi")}
-              style={typeHolder === 'xi' ? { color:'#e4aa48',scale:'1.1',transition:'all ease 0.3'}:null}
+              style={
+                typeHolder === "xi"
+                  ? {
+                      color: "#e4aa48",
+                      scale: "1.1",
+                      transition: "all ease 0.3",
+                    }
+                  : null
+              }
             >
               UI/UX
             </button>
           </ul>
         </div>
         <div className="h-fit w-full flex align-middle justify-center gap-3 items-center flex-wrap">
-          
-          {filtered_list.map(project=><DisplayProject project={project} key={project.id}/>)}
-
+          {filtered_list.map((project) => (
+            <DisplayProject project={project} key={project.id} />
+          ))}
         </div>
       </div>
     </div>
